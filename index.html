@@ -1,12 +1,411 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>my first three js project</title>
-  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="base.css">
-</head>
-<body>
-  <script src="./main.js" type="module">
-  </script>
-</body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Amit's Landing Page</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class ="nav bd-container">
+                <a href="#" class="nav__log">Amit Deb</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home nav_icon'></i>Home
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link">
+                                <i class='bx bx-user nav_icon'></i>Profile
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class='bx bx-book nav_icon'></i>Education
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-receipt nav_icon'></i>Skills
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class='bx bx-briefcase-alt nav_icon' ></i>Experience
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#certificates" class="nav__link">
+                                <i class='bx bx-award nav_icon' ></i></i>Certificates
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#references" class="nav__link">
+                                <i class='bx bx-link-external nav_icon'></i>References
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/temp.jpg" alt="" class="home__img">
+
+                                <h1 class="home__title">AMIT <b>DEB</b></h1>
+                                <h3 class="home__profession">Software Developer</h3>
+                                <div>
+                                    <a download="" href="assets/pdf/AmitDebResume1_17_24.pdf" class="home__button-movil">Download Resume</a>
+                                </div>
+                            </div>
+
+                            <div class="home__address bd-grid">
+                                <span class="home__information">
+                                    <i class='bx bx-map home_icon'></i> Santa Rosa - United States
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bxs-envelope home_icon'></i> amit.deb.stu@gmail.com
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-phone home_icon'></i> +1 707-570-7676
+                                </span>
+                            </div>
+                        </div>
+                        <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+                        <a class='bx bx-download generate-pdf' title="Download PDF" id="resume-button" href="assets/pdf/AmitDebResume1_17_24.pdf"></a>
+
+                    </section>          
+                    
+                 
+                    <section class="social section">
+                        <h2 class="section-title">FIND ME AT</h2>
+
+                        <div class="social__container bd-grid">
+                            <a href="https://www.linkedin.com/in/amitdebpy/" target="_blank" class="social__link">
+                                <i class='bx bxl-linkedin-square social__icon'></i> @amitdebpy
+                            </a>
+                            <a href="https://github.com/goobaby" target="_blank" class="social__link">
+                                <i class='bx bxl-github social__icon'></i> @goobaby
+                            </a>
+                            <a href="https://goobaby.itch.io/" target="_blank" class="social__link">
+                                <i class='social__icon'> <img src="assets/img/itchiologo/logos/itchio-logo-textless-black.png" width="16" height=auto></i> </i> @goobaby
+                            </a>
+                        </div>
+                    </section>
+
+
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profile</h2>
+                        
+                        <p class="profile_description">A recent graduate with a fiery passion for code, I'm wielding solid technical skills in Python and C++, combined with AGILE development know-how and a proven track record of building innovative solutions through personal and collaborative projects. My analytical mind, eagerness to learn, and collaborative spirit make me a quick learner hungry to contribute alongside experienced professionals and propel your software development goals to new heights! Let's code together!</p>
+                    </section>
+                    
+
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+
+                                <div class="education__data">
+                                    <h3 class="education__title">BACHELOR'S OF COMPUTER SCIENCE</h3>
+                                    <span class="education__studies">Sonoma State University</span>
+                                    <span class="education__year"><br>2019 - 2023</span>
+                                    <span class="education__GPA"><br>GPA: 3.5/4.0</span>
+                                    <span class="education__honors"><br>Department Honors</span>
+                                    <span class="education__honors"><br>Dean's List</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Languages</h2>
+
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Python
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>C++
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>C#
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>SQL
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>JavaScript
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Rust
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Libraries</h2>
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>PyTorch
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>TensorFlow
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Keras
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>NumPy
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>OpenCV
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>NodeJS
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Tools</h2>
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Linux
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>AGILE Development
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Visual Studio
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Github
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Google Cloud Platform
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>NIST
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+
+                <div class="resume__right">
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experience</h2>
+
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Sonoma State VITaL Lab - Software Engineer Intern</h3>
+                                    <span class="experience__company">From Jan 2023 to May 2023</span>
+                                    <p class="experience__description">● Developed a VR Experience in Unreal Engine 5.0, leveraging Meta's Quest and HTC's Vive VR
+                                        hardware for comprehensive testing and debugging.
+                                        <br>● Utilized C++ APIs to implement a sophisticated VR interface, seamlessly integrating controllers
+                                        to facilitate interactive experiences within the virtual environment.
+                                        <br>● Engineered and fine-tuned the VR interaction system, ensuring precise and immersive user
+                                        engagement through the seamless integration of hardware and software components.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="certificate section" id="certificates">
+                        <h2 class="section-title">certificates</h2>
+
+                        <div class="certificate__container bd">
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">
+                                    <a href="https://github.com/amitdebpy/X-ray-COVID-Classification" target="_blank" class="git__link">
+                                        <i class='bx bxl-google-cloud bx-sm'></i>
+                                        Professional Google Cybersecurity (2024)
+                                    </a>
+                                </h3>
+                                <p class="certificate__description"> Mastered cybersecurity for organizations by mastering common threats, mitigation, networking, SIEM tools, Python, Linux, and SQL.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Projects</h2>
+
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">
+                                        <a href="https://github.com/amitdebpy/X-ray-COVID-Classification" target="_blank" class="git__link">
+                                            <i class='bx bxl-github bx-sm social__icon'></i>
+                                            Pneumonia in COVID X-Ray Neural Network
+                                        </a>
+                                    </h3>
+                                    <span class="experience__company">Python, PyTorch, Keras, TensorFlow, Github</span>
+                                    <p class="experience__description">● Created a convolutional neural network to classify Pneumonia in COVID patients’ X-rays
+                                        <br>● Tested and prevented two types of bias with given data using JSON and Python scripts
+                                        <br>● Leveraged Google’s TensorFlow library to program the neural network
+                                        <br>● Optimized the model using hyper-parameters give the best training and testing accuracy of 96%
+                                        and 92% respectively
+                                        
+                                        </p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">
+                                        <a href="https://github.com/amitdebpy/Database-Management-Systems-Design/tree/main/355/deb_a_project2" target="_blank" class="git__link">
+                                            <i class='bx bxl-github bx-sm social__icon'></i>
+                                            Restaurant Management Database
+                                        </a>
+                                    </h3>
+                                    <span class="experience__company">SQL, App.js, Linux, HTML, SCRUM, AGILE, Github</span>
+                                    <p class="experience__description">● Performed conceptual data modeling using MySQL for restaurant database architecture.
+                                        <br>● Developed and implemented modules for HR, payroll, and inventory management.
+                                        <br>● Constructed SQL functions to calculate profit margins based on operational data.
+                                        <br>● Deployed database to a server, enabling web-based access and management.
+                                        </p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">
+                                        <a href="https://github.com/amitdebpy/Simple-Python-Interpreter" target="_blank" class="git__link">
+                                            <i class='bx bxl-github bx-sm social__icon'></i>
+                                            C++ Python Interpreter
+                                        </a>
+                                    </h3>
+                                    <span class="experience__company">Python, C++</span>
+                                    <p class="experience__description">● Built a C++ Python interpreter using AST parsing and bytecode generation for efficiency.
+                                        <br>● Implemented core Python features: variables, data types, operators, control flow, functions.
+                                        <br>● Developed a memory management system for dynamic allocation and garbage collection.
+                                        <br>● Built a basic standard library, enabling common Python operations such as I/O, math, and string
+                                        manipulation.
+                                        
+                                        </p>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </section>
+
+                    <section class="references section" id="references">
+                        
+                    </section>
+
+                    <section class="languages section">
+                        <h2 class="section-title">Spoken Languages</h2>
+
+                        <div class="languages__container bd-grid">
+                            <ul class="languages___content ">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> English
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Bangla
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    
+                    <section class="interests section">
+                        <h2 class="section-title">Interests</h2>
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class='bx bx-headphone interests__icon'></i>
+                                <span class="interests__name">Making Music</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class='bx bx-book-alt interests__icon'></i>
+                                <span class="interests__name">Reading</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class='bx bx-camera interests__icon'></i>
+                                <span class="interests__name">Nature Photography</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>        
+        </main>
+
+        
+        <a href="" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+
+        <!--========== HTML2PDF ==========-->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
